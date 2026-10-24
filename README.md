@@ -6,7 +6,7 @@
 
 Constela é o design system da [Novah Care](https://novah.care). Um único arquivo de tokens gera as variáveis CSS, a configuração do Tailwind CSS v4, o adaptador para shadcn/ui, o tema do Material UI, as fontes e o kit de marca usados nos produtos da empresa.
 
-**Documentação:** https://novah-care.github.io/constela/
+**Documentação:** https://constela.novah.care/
 
 ## Instalação
 
@@ -68,7 +68,7 @@ npm install
 npm run check   # gera dist/, roda os testes e gera o site em site/
 ```
 
-Tudo sai de `tokens/tokens.json`. Veja [Contribuindo](https://novah-care.github.io/constela/contribuindo.html).
+Tudo sai de `tokens/tokens.json`. Veja [Contribuindo](https://constela.novah.care/contribuindo.html).
 
 ## Licença
 

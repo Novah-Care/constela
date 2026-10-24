@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Constela, o design system da Novah Care: tokens, CSS, tema para Tailwind, shadcn/ui e Material UI, fontes e marca.",
   "keywords": ["design-system", "design-tokens", "tailwindcss", "shadcn", "mui", "novah-care"],
-  "homepage": "https://novah-care.github.io/constela/",
+  "homepage": "https://constela.novah.care/",
   "repository": { "type": "git", "url": "git+https://github.com/Novah-Care/constela.git" },
   "bugs": { "url": "https://github.com/Novah-Care/constela/issues" },
   "license": "SEE LICENSE IN LICENSE",

@@ -1,6 +1,6 @@
 # Contribuindo
 
-O guia completo está na documentação: https://novah-care.github.io/constela/contribuindo.html
+O guia completo está na documentação: https://constela.novah.care/contribuindo.html
 
 Resumo:
 
