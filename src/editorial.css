@@ -1,0 +1,68 @@
+/* Constela: padrão de leitura para sites editoriais (base de conhecimento, artigos).
+   Títulos e interface continuam na fonte da marca; só o corpo do artigo usa a serifa.
+   Carregar depois de tokens.css e fonts.css. */
+
+.nc-article {
+  max-width: 68ch;
+  margin-inline: auto;
+  color: var(--text-primary);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+}
+
+.nc-article > * + * { margin-top: var(--space-5); }
+
+.nc-article h1,
+.nc-article h2,
+.nc-article h3,
+.nc-article h4 {
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+.nc-article h1 { font-size: 36px; line-height: 44px; font-weight: 700; letter-spacing: -0.02em; }
+.nc-article h2 { font-size: 24px; line-height: 32px; font-weight: 600; margin-top: var(--space-12); }
+.nc-article h3 { font-size: 20px; line-height: 28px; font-weight: 600; margin-top: var(--space-8); }
+.nc-article h4 { font-size: 16px; line-height: 24px; font-weight: 600; margin-top: var(--space-6); }
+.nc-article h2 + *, .nc-article h3 + *, .nc-article h4 + * { margin-top: var(--space-3); }
+
+.nc-article .nc-article__lead { font-size: 20px; line-height: 32px; color: var(--text-secondary); }
+.nc-article .nc-article__meta { font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--text-secondary); }
+
+.nc-article a { color: var(--link); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.nc-article a:hover { color: var(--link-hover); }
+.nc-article a:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; border-radius: var(--radius-sm); }
+
+.nc-article ul, .nc-article ol { padding-left: var(--space-6); }
+.nc-article li + li { margin-top: var(--space-2); }
+
+.nc-article blockquote {
+  margin-inline: 0;
+  padding: var(--space-1) 0 var(--space-1) var(--space-6);
+  border-left: 2px solid var(--teal-500);
+  font-size: 20px;
+  line-height: 32px;
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.nc-article code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-subtle);
+}
+
+.nc-article table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 14px; line-height: 20px; }
+.nc-article th { text-align: left; padding: var(--space-3); background: var(--table-header-bg); color: var(--table-header-text); font-family: var(--font-heading); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+.nc-article td { padding: var(--space-3); border-bottom: 1px solid var(--border-default); }
+
+.nc-article figure { margin-inline: 0; }
+.nc-article figcaption { margin-top: var(--space-2); font-family: var(--font-sans); font-size: 12px; line-height: 18px; color: var(--text-secondary); }
+
+.nc-article hr { border: 0; border-top: 1px solid var(--border-default); margin-block: var(--space-12); }

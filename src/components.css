@@ -1,0 +1,114 @@
+/* Novah Care: componentes em CSS puro. Carregar depois de tokens.css.
+   Todas as cores, raios, sombras e medidas vêm dos tokens; nenhum valor de cor solto aqui.
+   Tema escuro: data-theme="dark" no <html> (ou classe .dark mapeada para os mesmos tokens). */
+
+body { font-family: var(--font-sans); color: var(--text-primary); background: var(--bg-page); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+::selection { background: var(--selection-bg); color: var(--selection-text); }
+
+/* ---------- Botão ---------- */
+.nc-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  height: var(--control-md); padding: 0 var(--space-4);
+  font-family: var(--font-heading); font-size: 14px; line-height: 20px; font-weight: 600;
+  border: 1px solid transparent; border-radius: var(--radius-md);
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: background-color 150ms ease-in-out, border-color 150ms ease-in-out, color 150ms ease-in-out;
+}
+.nc-btn:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.nc-btn:disabled, .nc-btn[aria-disabled="true"] { opacity: var(--opacity-disabled); cursor: not-allowed; }
+.nc-btn svg { width: 20px; height: 20px; stroke-width: 1.5; }
+.nc-btn--sm { height: var(--control-sm); padding: 0 var(--space-3); font-size: 12px; line-height: 16px; }
+.nc-btn--lg { height: var(--control-lg); padding: 0 var(--space-6); font-size: 16px; line-height: 24px; }
+.nc-btn--primary { background: var(--action-primary); color: var(--on-action-primary); }
+.nc-btn--primary:hover:not(:disabled) { background: var(--action-primary-hover); }
+.nc-btn--secondary { background: var(--action-secondary); color: var(--on-action-secondary); border-color: var(--teal-200); }
+.nc-btn--secondary:hover:not(:disabled) { background: var(--action-secondary-hover); }
+.nc-btn--accent { background: var(--action-accent); color: var(--on-action-accent); }
+.nc-btn--accent:hover:not(:disabled) { background: var(--action-accent-hover); }
+.nc-btn--ghost { background: transparent; color: var(--link); }
+.nc-btn--ghost:hover:not(:disabled) { background: var(--bg-subtle); color: var(--link-hover); }
+.nc-btn--danger { background: var(--action-danger); color: var(--on-action-danger); }
+.nc-btn--danger:hover:not(:disabled) { filter: brightness(0.9); }
+.nc-btn--outline { background: var(--bg-surface); color: var(--text-primary); border-color: var(--border-strong); }
+.nc-btn--outline:hover:not(:disabled) { background: var(--bg-subtle); }
+@media (max-width: 767px) { .nc-btn { min-height: var(--touch-target); } }
+
+/* ---------- Campo de formulário ---------- */
+.nc-field { display: flex; flex-direction: column; gap: var(--space-1); }
+.nc-label { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 500; color: var(--text-primary); }
+.nc-input {
+  height: var(--control-md); padding: var(--space-2) var(--space-3);
+  font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--text-primary);
+  background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-md);
+  transition: border-color 100ms ease-out, box-shadow 100ms ease-out;
+}
+.nc-input::placeholder { color: var(--text-secondary); }
+.nc-input:hover { border-color: var(--border-strong); }
+.nc-input:focus { outline: none; border-color: var(--border-focus); box-shadow: 0 0 0 3px var(--focus-halo); }
+.nc-input:disabled { background: var(--bg-subtle); color: var(--text-disabled); cursor: not-allowed; }
+.nc-help { font-size: 12px; line-height: 18px; color: var(--text-secondary); }
+.nc-field--error .nc-input { border-color: var(--error); }
+.nc-field--error .nc-help { color: var(--text-error); display: flex; align-items: center; gap: var(--space-1); }
+@media (max-width: 767px) { .nc-input { min-height: var(--touch-target); } }
+
+/* ---------- Card ---------- */
+.nc-card {
+  background: var(--bg-surface); border: 1px solid var(--border-default); border-radius: var(--radius-lg);
+  padding: var(--space-6); box-shadow: var(--shadow-sm); color: var(--text-primary);
+}
+.nc-card--clickable { cursor: pointer; transition: box-shadow 200ms ease-in-out, border-color 200ms ease-in-out; }
+.nc-card--clickable:hover { box-shadow: var(--shadow-md); border-color: var(--border-focus); }
+.nc-card--clickable:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+.nc-card--highlight { border-left: 4px solid var(--teal-600); }
+.nc-card--urgent { border-top: 4px solid var(--amber-500); }
+.nc-card__title { margin: 0 0 var(--space-2); font-family: var(--font-heading); font-size: 20px; line-height: 28px; font-weight: 600; }
+.nc-card__body { margin: 0; font-size: 14px; line-height: 20px; color: var(--text-secondary); }
+.nc-kpi__value { font-family: var(--font-heading); font-size: 30px; line-height: 38px; font-weight: 700; color: var(--text-primary); }
+.nc-kpi__label { font-size: 12px; line-height: 18px; color: var(--text-secondary); }
+
+/* ---------- Badge de status ---------- */
+.nc-badge {
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 10px;
+  font-family: var(--font-sans); font-size: 12px; line-height: 18px; font-weight: 500;
+  border-radius: var(--radius-full); white-space: nowrap;
+}
+.nc-badge::before { content: ""; width: 6px; height: 6px; border-radius: var(--radius-full); background: currentColor; }
+.nc-badge--success { background: var(--success-soft); color: var(--success-text); }
+.nc-badge--success::before { background: var(--success); }
+.nc-badge--warning { background: var(--warning-soft); color: var(--warning-text); }
+.nc-badge--warning::before { background: var(--warning); }
+.nc-badge--error { background: var(--error-soft); color: var(--error-text); }
+.nc-badge--error::before { background: var(--error); }
+.nc-badge--info { background: var(--info-soft); color: var(--info-text); }
+.nc-badge--info::before { background: var(--info); }
+.nc-badge--scheduled { background: var(--scheduled-soft); color: var(--scheduled-text); }
+.nc-badge--scheduled::before { background: var(--scheduled); }
+
+/* ---------- Tabela ---------- */
+.nc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--text-primary); background: var(--bg-surface); }
+.nc-table th {
+  text-align: left; padding: var(--space-3) var(--space-4); background: var(--table-header-bg); color: var(--table-header-text);
+  font-family: var(--font-heading); font-size: 12px; line-height: 16px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border-default);
+}
+.nc-table td { height: var(--control-lg); padding: 0 var(--space-4); border-bottom: 1px solid var(--border-default); }
+.nc-table tbody tr:nth-child(even) { background: var(--table-row-alt); }
+.nc-table tbody tr:hover { background: var(--table-row-hover); }
+.nc-table .nc-num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ---------- Sidebar ---------- */
+.nc-sidebar { width: var(--sidebar-width); background: var(--bg-sidebar); color: var(--text-on-dark); display: flex; flex-direction: column; }
+.nc-sidebar__logo { padding: var(--space-6); }
+.nc-sidebar__logo img { width: 160px; height: auto; display: block; }
+.nc-sidebar__nav { display: flex; flex-direction: column; gap: 2px; padding: 0 var(--space-3) var(--space-6); }
+.nc-nav-item {
+  display: flex; align-items: center; gap: var(--space-3); height: var(--control-md); padding: 0 var(--space-3);
+  font-family: var(--font-heading); font-size: 14px; font-weight: 500; color: var(--teal-100); text-decoration: none;
+  border-left: 3px solid transparent; border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  transition: background-color 100ms ease-out;
+}
+.nc-nav-item svg { width: 20px; height: 20px; stroke-width: 1.5; flex: none; }
+.nc-nav-item:hover { background: var(--bg-sidebar-active); color: var(--text-on-dark); }
+.nc-nav-item[aria-current="page"] { background: var(--bg-sidebar-active); color: var(--text-on-dark); border-left-color: var(--amber-400); font-weight: 600; }
+.nc-nav-item:focus-visible { outline: 2px solid var(--text-on-dark); outline-offset: -2px; }
