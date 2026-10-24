@@ -20,4 +20,4 @@ Em sites que usam o CDN, troque a versão na URL.
 
 ## Publicação
 
-Cada tag `v*` no repositório publica o pacote no npm, com proveniência, e atualiza este site. O histórico completo está no [CHANGELOG](https://github.com/Novah-Care/constela/blob/main/CHANGELOG.md).
+Cada tag `v*` no repositório publica o pacote no npm, com proveniência. Este site é atualizado a cada mudança na `main`. O histórico completo está no [CHANGELOG](https://github.com/Novah-Care/constela/blob/main/CHANGELOG.md).
