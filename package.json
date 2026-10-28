@@ -1,21 +1,41 @@
 {
   "name": "@novah-care/constela",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Constela, o design system da Novah Care: tokens, CSS, tema para Tailwind, shadcn/ui e Material UI, fontes e marca.",
-  "keywords": ["design-system", "design-tokens", "tailwindcss", "shadcn", "mui", "novah-care"],
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "tailwindcss",
+    "shadcn",
+    "mui",
+    "novah-care"
+  ],
   "homepage": "https://constela.novah.care/",
-  "repository": { "type": "git", "url": "git+https://github.com/Novah-Care/constela.git" },
-  "bugs": { "url": "https://github.com/Novah-Care/constela/issues" },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Novah-Care/constela.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Novah-Care/constela/issues"
+  },
   "license": "SEE LICENSE IN LICENSE",
   "author": "Novah Care",
   "type": "module",
-  "sideEffects": ["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "main": "./dist/tokens.js",
   "types": "./dist/tokens.d.ts",
   "style": "./dist/index.css",
   "exports": {
-    ".": { "types": "./dist/tokens.d.ts", "default": "./dist/tokens.js" },
-    "./mui": { "types": "./dist/mui.d.ts", "default": "./dist/mui.js" },
+    ".": {
+      "types": "./dist/tokens.d.ts",
+      "default": "./dist/tokens.js"
+    },
+    "./mui": {
+      "types": "./dist/mui.d.ts",
+      "default": "./dist/mui.js"
+    },
     "./index.css": "./dist/index.css",
     "./tokens.css": "./dist/tokens.css",
     "./tokens-auto.css": "./dist/tokens-auto.css",
@@ -30,7 +50,13 @@
     "./brand/*": "./dist/brand/*",
     "./package.json": "./package.json"
   },
-  "files": ["dist", "LICENSE", "LICENSE-BRAND", "README.md", "CHANGELOG.md"],
+  "files": [
+    "dist",
+    "LICENSE",
+    "LICENSE-BRAND",
+    "README.md",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node --test tests/*.test.mjs",
@@ -41,11 +67,18 @@
     "@mui/material": ">=5"
   },
   "peerDependenciesMeta": {
-    "@mui/material": { "optional": true }
+    "@mui/material": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "marked": "18.0.14"
   },
-  "engines": { "node": ">=20" },
-  "publishConfig": { "access": "public", "provenance": true }
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
 }

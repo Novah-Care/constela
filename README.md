@@ -1,5 +1,5 @@
 <p>
-  <img src="brand/logo/novah-care-compacta.svg" alt="Novah Care" width="160">
+  <img src="https://constela.novah.care/assets/brand/logo/novah-care-compacta.svg" alt="Novah Care" width="160">
 </p>
 
 # Constela
@@ -40,7 +40,7 @@ const theme = createNovahTheme('light'); // ou 'dark'
 ### HTML puro
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@novah-care/constela@1.0.0/dist/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@novah-care/constela@1.0.1/dist/index.css">
 <button class="nc-btn nc-btn--primary">Agendar exame</button>
 ```
 

@@ -4,6 +4,14 @@ Todas as mudanças relevantes do Constela. O formato segue o [Keep a Changelog](
 
 ## Não lançado
 
+## 1.0.1
+
+### Documentação
+
+- Guia do Lovable revisado a partir da aplicação no site institucional: levantar variáveis próprias e estados do logo antes de instalar, apontar as variáveis para os tokens em vez de removê-las, garantir `--primary` e `--ring` mesmo quando o import fica antes das variáveis do projeto, e checklist de revisão de contraste sobre fundo escuro.
+- Regras do Knowledge do Lovable com cores para texto sobre fundo teal escuro.
+- Logo do README com endereço absoluto, para aparecer também na página do npm.
+
 ## 1.0.0
 
 Primeira versão pública.
