@@ -11,12 +11,13 @@ Etiqueta que mostra o tipo de uma entidade (tipo de exame, tipo de laudo, origem
 ```html exemplo
 <span class="nc-tag nc-tag--verde">Admissional</span>
 <span class="nc-tag nc-tag--azul">Periódico</span>
-<span class="nc-tag nc-tag--rosa">Demissional</span>
+<span class="nc-tag nc-tag--vermelho">Demissional</span>
 <span class="nc-tag nc-tag--violeta">Retorno ao trabalho</span>
 <span class="nc-tag nc-tag--laranja">Mudança de função</span>
 <span class="nc-tag nc-tag--ciano">Ciano</span>
 <span class="nc-tag nc-tag--oliva">Oliva</span>
 <span class="nc-tag nc-tag--anil">Anil</span>
+<span class="nc-tag nc-tag--rosa">Rosa</span>
 <span class="nc-tag">Sem cor</span>
 ```
 
@@ -30,6 +31,7 @@ Etiqueta que mostra o tipo de uma entidade (tipo de exame, tipo de laudo, origem
 | `ciano` | `tag-ciano-soft` | `tag-ciano-text` |
 | `oliva` | `tag-oliva-soft` | `tag-oliva-text` |
 | `anil` | `tag-anil-soft` | `tag-anil-text` |
+| `vermelho` | `tag-vermelho-soft` | `tag-vermelho-text` |
 
 No Tailwind, as cores viram utilitários como `bg-tag-azul-soft` e `text-tag-azul-text`.
 
@@ -47,6 +49,6 @@ Padding de 2px por 8px, DM Sans 500, 12px, `radius-sm`. Os fundos são claros no
 ## Regras
 
 - O texto é obrigatório: a cor ajuda a reconhecer, mas não substitui o nome.
-- Não há vermelho na paleta: numa tela de prazos, vermelho é lido como vencido ou erro.
+- Use `vermelho` só para o tipo que pede atenção de prazo, como o exame demissional. Onde o vermelho já indica estado, como na tela de vigência de laudos (vencido), escolha outra cor.
 - Fixe a cor de cada valor no código e use a mesma em todos os produtos (Admissional é sempre verde).
-- Com mais de oito valores, agrupe ou use a tag sem cor para os menos frequentes.
+- Com mais de nove valores, agrupe ou use a tag sem cor para os menos frequentes.

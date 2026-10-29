@@ -56,7 +56,7 @@ const blocks = {
         return `<div class="scale__step" style="background:${t.value};color:${ink}" title="${esc(t.usage)}"><b>${step}</b><code>${t.value}</code></div>`;
       }).join('') + '</div>';
     }
-    const status = tokens.color.tokens.filter((t) => /^(success|warning|error|info|scheduled)(-|$)/.test(t.name));
+    const status = tokens.color.tokens.filter((t) => /^(success|warning|error|info|scheduled|inactive)(-|$)/.test(t.name));
     html += '<h3>Status</h3><table><thead><tr><th>Token</th><th>Valor</th><th>Uso</th></tr></thead><tbody>' +
       status.map((t) => `<tr><td>${swatch(t.name)}<code>${t.name}</code></td><td><code>${t.value}</code></td><td>${esc(t.usage)}</td></tr>`).join('') + '</tbody></table>';
     const tags = tokens.color.tokens.filter((t) => t.name.startsWith('tag-'));
