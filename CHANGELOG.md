@@ -4,6 +4,16 @@ Todas as mudanças relevantes do Constela. O formato segue o [Keep a Changelog](
 
 ## Não lançado
 
+## 1.1.0
+
+### Adicionado
+
+- Tag de categoria (`nc-tag`), para o tipo de uma entidade (tipo de exame, tipo de laudo) com uma cor por valor, separada das cores de status: sem ponto, com canto `radius-sm` e oito cores sem vermelho (`tag-{cor}-soft` e `tag-{cor}-text`, com azul, verde, violeta, rosa, laranja, ciano, oliva e anil). Os pares entram no teste de contraste e no Tailwind (`bg-tag-azul-soft`, `text-tag-azul-text`).
+
+### Corrigido
+
+- Logotipo, símbolo e favicons revetorizados com curvas suaves: os SVGs anteriores vinham de vetorização automática, com curvas facetadas no "Novah" e degraus nas letras de "care", visíveis a partir de uns 200px de largura. O desenho e a composição de cada versão não mudam, e os arquivos ficaram com metade do tamanho. PNGs e `favicon.ico` gerados de novo a partir dos SVGs.
+
 ## 1.0.1
 
 ### Documentação

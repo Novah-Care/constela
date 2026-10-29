@@ -121,6 +121,10 @@ function tailwindCss() {
   for (const t of tokens.color.tokens.filter((t) => /^(success|warning|error|info|scheduled)(-|$)/.test(t.name))) {
     lines.push(`  --color-${t.name}: ${t.value};`);
   }
+  lines.push('', '  /* Tags de categoria */');
+  for (const t of tokens.color.tokens.filter((t) => t.name.startsWith('tag-'))) {
+    lines.push(`  --color-${t.name}: ${t.value};`);
+  }
   lines.push('', '  /* Fontes */');
   lines.push(`  --font-sans: ${tokens.type.families.sans};`);
   lines.push(`  --font-heading: ${tokens.type.families.heading};`);
