@@ -85,6 +85,23 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 .nc-badge--scheduled { background: var(--scheduled-soft); color: var(--scheduled-text); }
 .nc-badge--scheduled::before { background: var(--scheduled); }
 
+/* ---------- Tag de categoria ---------- */
+/* Atributo (tipo de exame, tipo de laudo), não estado: sem ponto e com canto reto, para não ser lida como status. */
+.nc-tag {
+  display: inline-flex; align-items: center; padding: 2px 8px;
+  font-family: var(--font-sans); font-size: 12px; line-height: 18px; font-weight: 500;
+  border-radius: var(--radius-sm); white-space: nowrap;
+  background: var(--bg-subtle); color: var(--text-primary);
+}
+.nc-tag--azul { background: var(--tag-azul-soft); color: var(--tag-azul-text); }
+.nc-tag--verde { background: var(--tag-verde-soft); color: var(--tag-verde-text); }
+.nc-tag--violeta { background: var(--tag-violeta-soft); color: var(--tag-violeta-text); }
+.nc-tag--rosa { background: var(--tag-rosa-soft); color: var(--tag-rosa-text); }
+.nc-tag--laranja { background: var(--tag-laranja-soft); color: var(--tag-laranja-text); }
+.nc-tag--ciano { background: var(--tag-ciano-soft); color: var(--tag-ciano-text); }
+.nc-tag--oliva { background: var(--tag-oliva-soft); color: var(--tag-oliva-text); }
+.nc-tag--anil { background: var(--tag-anil-soft); color: var(--tag-anil-text); }
+
 /* ---------- Tabela ---------- */
 .nc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--text-primary); background: var(--bg-surface); }
 .nc-table th {
