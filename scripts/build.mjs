@@ -118,7 +118,7 @@ function tailwindCss() {
     lines.push(`  --color-gray-${step}: ${t.value};`);
   }
   lines.push('', '  /* Status */');
-  for (const t of tokens.color.tokens.filter((t) => /^(success|warning|error|info|scheduled)(-|$)/.test(t.name))) {
+  for (const t of tokens.color.tokens.filter((t) => /^(success|warning|error|info|scheduled|inactive)(-|$)/.test(t.name))) {
     lines.push(`  --color-${t.name}: ${t.value};`);
   }
   lines.push('', '  /* Tags de categoria */');

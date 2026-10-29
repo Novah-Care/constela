@@ -4,6 +4,13 @@ Todas as mudanças relevantes do Constela. O formato segue o [Keep a Changelog](
 
 ## Não lançado
 
+## 1.2.0
+
+### Adicionado
+
+- Badge de status `inactive` (`inactive`, `inactive-soft` e `inactive-text`), em cinza, para Inativo, Desligado e Arquivado. Antes esses estados caíam no `info`, em azul.
+- Cor `vermelho` na tag de categoria (`tag-vermelho-soft` e `tag-vermelho-text`), para o tipo que pede atenção de prazo, como o exame demissional. Onde o vermelho já indica estado, como na vigência de laudos, a regra continua sendo escolher outra cor.
+
 ## 1.1.0
 
 ### Adicionado

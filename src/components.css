@@ -84,6 +84,8 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 .nc-badge--info::before { background: var(--info); }
 .nc-badge--scheduled { background: var(--scheduled-soft); color: var(--scheduled-text); }
 .nc-badge--scheduled::before { background: var(--scheduled); }
+.nc-badge--inactive { background: var(--inactive-soft); color: var(--inactive-text); }
+.nc-badge--inactive::before { background: var(--inactive); }
 
 /* ---------- Tag de categoria ---------- */
 /* Atributo (tipo de exame, tipo de laudo), não estado: sem ponto e com canto reto, para não ser lida como status. */
@@ -101,6 +103,7 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
 .nc-tag--ciano { background: var(--tag-ciano-soft); color: var(--tag-ciano-text); }
 .nc-tag--oliva { background: var(--tag-oliva-soft); color: var(--tag-oliva-text); }
 .nc-tag--anil { background: var(--tag-anil-soft); color: var(--tag-anil-text); }
+.nc-tag--vermelho { background: var(--tag-vermelho-soft); color: var(--tag-vermelho-text); }
 
 /* ---------- Tabela ---------- */
 .nc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 14px; line-height: 20px; color: var(--text-primary); background: var(--bg-surface); }

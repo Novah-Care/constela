@@ -14,6 +14,7 @@ Pílula que mostra o estado de uma entidade (exame, ASO, colaborador, evento do 
 <span class="nc-badge nc-badge--error">Cancelado</span>
 <span class="nc-badge nc-badge--info">Em análise</span>
 <span class="nc-badge nc-badge--scheduled">Agendado</span>
+<span class="nc-badge nc-badge--inactive">Desligado</span>
 ```
 
 | Tipo | Fundo | Texto | Ponto | Exemplos |
@@ -23,6 +24,7 @@ Pílula que mostra o estado de uma entidade (exame, ASO, colaborador, evento do 
 | `error` | `error-soft` | `error-text` | `error` | Erro, Cancelado, Vencido, Inapto |
 | `info` | `info-soft` | `info-text` | `info` | Em análise |
 | `scheduled` | `scheduled-soft` | `scheduled-text` | `scheduled` | Agendado |
+| `inactive` | `inactive-soft` | `inactive-text` | `inactive` | Inativo, Desligado, Arquivado |
 
 ## Especificação
 
