@@ -26,7 +26,7 @@ Um único arquivo de tokens gera tudo o que os projetos consomem: variáveis CSS
 
 ## Princípios
 
-- **Clareza.** Saúde ocupacional tem muitas siglas e prazos. Cada tela responde uma pergunta e mostra o próximo passo.
+- **Clareza.** Saúde ocupacional tem muitas siglas e prazos. Cada tela responde a uma pergunta e mostra o próximo passo.
 - **Confiança.** Dados de saúde pedem uma interface sóbria: teal como base, âmbar só onde há ação.
 - **Eficiência.** Quem usa resolve a tarefa com o mínimo de passos.
 - **Consistência.** O mesmo componente, com o mesmo nome e o mesmo token, em todos os produtos. Se um valor não está no Constela, ele não entra no produto.
