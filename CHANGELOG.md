@@ -4,6 +4,10 @@ Todas as mudanças relevantes do Constela. O formato segue o [Keep a Changelog](
 
 ## Não lançado
 
+### Documentação
+
+- Revisão de português do Brasil: "Âmbar da marca" na nota de uso de `amber-500`, regência em "responde a uma pergunta" na visão geral e concordância no item do kit de marca da 1.0.0.
+
 ## 1.2.0
 
 ### Adicionado
@@ -40,7 +44,7 @@ Primeira versão pública.
 - Tema do Material UI (`@novah-care/constela/mui`) e tokens em JavaScript.
 - Padrão de leitura com Source Serif 4 para sites editoriais.
 - Fontes Plus Jakarta Sans, DM Sans e Source Serif 4 (subset latino).
-- Kit de marca revisado: logotipo principal, compacta e símbolo, em quatro cores, e favicons.
+- Kit de marca revisado: logotipo nas versões principal, compacta e símbolo, em quatro cores, e favicons.
 - Teste automático de contraste WCAG 2.1 AA nos dois temas.
 - Site de documentação.
 
